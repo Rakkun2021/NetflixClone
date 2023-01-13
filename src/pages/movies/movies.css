@@ -1,0 +1,69 @@
+.movies {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  margin-top: 150px;
+  padding: 0px 50px;
+  color: white;
+}
+
+.movies .titleBar {
+  font-size: 45px;
+  font-weight: 600;
+  margin-right: 30px;
+  border-bottom: 1px solid white;
+}
+
+.optionsTab {
+  margin: 30px 0px 5px 0px;
+  display: flex;
+  align-items: center;
+}
+
+.optionsTab > * {
+  margin-right: 20px;
+}
+
+button {
+  padding: 5px 15px;
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+  border: none;
+  background-color: gray;
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+button > * {
+  margin-right: 3px;
+}
+
+button span {
+  margin-left: 3px;
+}
+
+.pagination {
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 60px;
+}
+
+.pagination button {
+  margin: 10px;
+  cursor: pointer;
+  background-color: red;
+  color: black;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.pagination .button-active {
+  margin: 10px;
+  cursor: pointer;
+  background-color: white;
+  color: black;
+}

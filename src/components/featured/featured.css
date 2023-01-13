@@ -1,0 +1,83 @@
+.featured {
+  height: 90vh;
+  width: 100%;
+  position: relative;
+  border-color: black;
+}
+
+img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.info {
+  position: absolute;
+  width: 100%;
+
+  bottom: 00px;
+  color: white;
+  padding-left: 50px;
+  background: rgba(1, 1, 1, 0);
+  background: linear-gradient(to top, rgba(1, 1, 1, 1), rgba(255, 255, 255, 0));
+}
+
+.info h1{
+  width: 50%;
+}
+
+.metaInfo {
+  display: flex;
+  align-items: center;
+}
+
+.resolution {
+  border: 1px solid red;
+  font-weight: 600;
+  color: black;
+  padding: 1px 4px;
+  background-color: red;
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+}
+
+.rating .icon {
+  margin-right: 5px;
+}
+
+.info h1 {
+  margin-bottom: 10px;
+}
+
+.metaInfo div {
+  margin: 0px 15px 0px 0px;
+}
+
+.metaInfo .duration {
+  margin-right: 30px;
+}
+
+.desc {
+  margin-top: 15px;
+  width: 50%;
+}
+
+.buttons {
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+}
+
+.buttons button {
+  margin-right: 20px;
+  border-radius: 20px;
+  padding: 5px 15px;
+  display: flex;
+  align-items: center;
+  border: none;
+  font-size: 15px;
+  cursor: pointer;
+}

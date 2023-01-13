@@ -1,0 +1,182 @@
+.signIn {
+  height: 100vh !important;
+  position: relative;
+  color: white;
+}
+
+.logo img{
+  position: absolute;
+  top: 30px;
+  left: 40px;
+  height: 50px !important;
+  width: 180px;
+}
+
+.image img {
+  height: 100vh !important;
+  width: 100%;
+  object-fit: cover;
+  filter: brightness(60%);
+}
+
+.signInCard {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 600px;
+  width: 400px;
+  background-color: rgba(13, 13, 13, 0.9);
+  display: flex;
+  flex-direction: column;
+  padding: 60px;
+  border-radius: 5px;
+}
+
+.signInCard > * {
+  margin-bottom: 20px;
+}
+
+.credentials > form > input {
+  height: 50px;
+  width: 100%;
+  border-radius: 5px;
+  border: none;
+  margin: 10px 0px;
+  background-color: rgb(74, 74, 74);
+  padding: 5px 10px;
+  color: rgb(55, 55, 55);
+  font-weight: 500;
+  color: white;
+}
+
+.credentials input[type="submit"] {
+  height: 50px;
+  width: 100%;
+  margin-bottom: -10px;
+  margin-top: 30px;
+  background-color: red;
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+input::placeholder {
+  font-size: 15px;
+}
+
+input[type="checkbox"] {
+  height: 18px;
+  width: 18px;
+  cursor: pointer;
+}
+
+.credentials {
+  display: flex;
+  flex-direction: column;
+}
+
+.checkbox {
+  display: flex;
+  align-items: center;
+}
+.checkbox > * {
+  margin-right: 5px;
+}
+
+.needHelp {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 15px;
+}
+
+.signUpNow {
+  display: flex;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.signUpNow > * {
+  margin-right: 5px;
+}
+
+.register{
+  cursor: pointer;
+  color: rgb(25, 124, 244);
+}
+
+.register:hover{
+  cursor: pointer;
+  transform: scale(1.03);
+}
+
+.captchaNote {
+  font-size: 12px;
+  line-height: 1.2;
+}
+
+.footer {
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+  margin: 0px 50px 0px 50px !important;
+  padding-bottom: 30px;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+.left img {
+  height: 70px;
+  width: 150px;
+  margin-left: 0px;
+  margin-bottom: 0px;
+}
+
+.connect {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.connect .icon {
+  height: 30px;
+  width: 30px;
+  margin-right: 10px;
+}
+
+.left > :not(.logo) {
+  margin-bottom: 20px;
+}
+
+.right {
+  display: flex;
+  align-items: center;
+  width: 50%;
+  margin-left: 100px;
+  font-size: 15px;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 50px 50px;
+}
+
+li {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.lists {
+  display: flex;
+}

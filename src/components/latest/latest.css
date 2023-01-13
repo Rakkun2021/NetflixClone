@@ -1,0 +1,28 @@
+.latest{
+    margin: 75px 50px;
+}
+
+.latest .titleBar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.titleBar h1{
+    border-bottom: 1px solid white;
+}
+
+.viewAll{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.viewAll .icon{
+    height: 20px;
+    width: 20px;
+}
+.viewAll p{
+    margin-right: 10px;
+    font-size: 15px;
+}

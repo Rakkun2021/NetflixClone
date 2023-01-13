@@ -1,0 +1,133 @@
+.signUp {
+  height: 85vh;
+  color: white;
+  position: relative;
+}
+
+.image img {
+  height: 85vh;
+  width: 100%;
+  object-fit: cover;
+  filter: brightness(60%);
+  border-bottom: 7px solid gray;
+}
+
+.logo img{
+  position: absolute;
+  top: 30px;
+  left: 40px;
+  height: 50px !important;
+  width: 180px;
+}
+
+.signUp .signInButton{
+  position: absolute;
+  top: 30px;
+  right: 40px;
+  padding: 8px 15px;
+  background-color: red;
+  border: none;
+  color: white;
+  border-radius: 2px;
+  font-weight: 500;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.signUpCard {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.signUpCard > * {
+  margin-bottom: 25px;
+}
+
+.signUpCard h1 {
+  font-size: 50px;
+  text-align: center;
+  font-weight: 600;
+  line-height: 1;
+}
+
+.signUpCard h3 {
+  font-size: 30px;
+  text-align: center;
+  font-weight: 500;
+  line-height: 1;
+}
+
+.signUpCard p {
+  margin-bottom: 15px;
+  margin-top: 10px;
+  font-size: 19px;
+  font-weight: 500;
+}
+
+.inputLabel {
+  width: 1000px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.signUp input {
+  height: 60px;
+  width: 500px;
+}
+
+input[type="email"] {
+  padding-left: 10px;
+  font-size: 18px;
+  outline: none;
+}
+
+input[type="password"] {
+  padding-left: 10px;
+  font-size: 18px;
+  outline: none;
+}
+
+input[type="submit"] {
+  height: 60px;
+  width: 200px;
+  background-color: red;
+  border: none;
+  font-size: 25px;
+  color: white;
+  font-weight: 500;
+}
+
+.promoLabels {
+  display: flex;
+  align-items: center;
+  padding: 30px 120px;
+  justify-content: center;
+  border-bottom: 7px solid gray;
+}
+
+.left h1 {
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+.left h2 {
+  font-size: 25px;
+  font-weight: 500;
+}
+
+.right img {
+  height: 375px;
+}
+
+.promoLabels-flipped {
+  display: flex;
+  align-items: center;
+  padding: 30px 120px;
+  justify-content: space-between;
+  border-bottom: 7px solid gray;
+}

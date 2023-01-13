@@ -1,0 +1,64 @@
+.footer {
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+  margin: 50px 50px 0px 50px;
+  padding-bottom: 30px;
+  padding-top: 80px;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+.left img {
+  height: 70px;
+  width: 150px;
+  margin-left: 0px;
+  margin-bottom: 0px;
+}
+
+.connect {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.connect .icon {
+  height: 30px;
+  width: 30px;
+  margin-right: 10px;
+}
+
+.left > :not(.logo) {
+  margin-bottom: 20px;
+}
+
+.right {
+  display: flex;
+  align-items: center;
+  width: 50%;
+  margin-left: 100px;
+  font-size: 15px;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 50px 50px;
+}
+
+li {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.lists {
+  display: flex;
+}

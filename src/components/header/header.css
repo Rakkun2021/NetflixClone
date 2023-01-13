@@ -1,0 +1,135 @@
+.header {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* background-color: black; */
+  background: linear-gradient(
+    to bottom,
+    rgba(254, 254, 254, 1) 0%,
+    rgba(209, 209, 209, 1) 0%,
+    rgba(219, 219, 219, 0.99) 1%,
+    rgba(0, 0, 0, 0.95) 5%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  position: fixed;
+  top: 0px;
+  z-index: 999;
+}
+
+.header-scrolled {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  position: fixed;
+  top: 0px;
+  background-color: black;
+}
+
+.container {
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  color: white;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.headerLogo {
+  margin: 15px 25px;
+}
+
+.headerLogo img {
+  height: 70px;
+}
+
+.container .menuItem {
+  cursor: pointer;
+  text-decoration: none;
+  color: inherit;
+}
+
+.searchBar {
+  width: 300px;
+  height: 40px;
+  border-radius: 20px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  opacity: 0.4;
+}
+
+.searchBar .icon {
+  color: black;
+  cursor: pointer;
+  opacity: 1 !important;
+}
+
+.icon:hover{
+  transform: scale(2); /* default value */
+  transition: transform 0.2s ease-in-out; /* animation duration and easing */
+}
+
+.searchBar input {
+  height: 35px;
+  width: 90%;
+  outline: none;
+  border: none;
+  padding: 10px;
+  font-size: 18px;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.profile img {
+  height: 35px;
+  width: 35px;
+  border-radius: 5px;
+  object-fit: cover;
+  /* border: 2px solid rgb(80, 79, 79); */
+}
+
+.profile .icon {
+  margin: 25px;
+  cursor: pointer;
+}
+
+.options {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  right: 0px;
+  top: 50px;
+  background-color: rgba(255,255,255, 0.4);
+  padding: 0px 5px 10px 5px;
+  border-radius: 5px;
+}
+
+.options> span:hover{
+  transform: scale(1.1);
+  transition: transform 0.2s ease-in-out;
+}
+
+.icon {
+  height: 60px;
+  width: 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
+  border-radius: 5px;
+}
+
+.options span {
+  margin-top: 8px;
+  cursor: pointer;
+}
