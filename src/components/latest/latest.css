@@ -1,28 +1,59 @@
-.latest{
-    margin: 75px 50px;
+.latest {
+  height: auto;
+  width: auto;
+  margin-top: 30px;
+  padding: 0px 50px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  color: white;
 }
 
-.latest .titleBar{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+.latest .titleBar {
+  height: auto;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  color: white;
+  justify-content: space-between;
+  margin: 20px 0px;
 }
 
-.titleBar h1{
-    border-bottom: 1px solid white;
+.latest .titleBar h1 {
+  font-size: 30px;
+  margin-left: 10px;
+  margin-right: 10px;
+  font-weight: 400;
+  border-bottom: 1px solid white;
 }
 
-.viewAll{
-    display: flex;
-    align-items: center;
-    cursor: pointer;
+.latest .titleBar button {
+  margin: 0 20px;
+  display: flex;
+  align-items: center;
+  padding: 3px 8px;
+  border-radius: 5px;
+  outline: none;
+  border: none;
 }
 
-.viewAll .icon{
-    height: 20px;
-    width: 20px;
+.latest .icon {
+  margin: 0px 4px 0px 0px;
 }
-.viewAll p{
-    margin-right: 10px;
-    font-size: 15px;
+
+.latest .viewAll {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.latest .viewAll .icon {
+  height: 20px;
+  width: 20px;
+}
+
+.latest .viewAll p {
+  margin-right: 10px;
+  font-size: 15px;
 }

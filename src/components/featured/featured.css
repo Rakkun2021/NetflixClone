@@ -5,13 +5,13 @@
   border-color: black;
 }
 
-img {
+.featured img {
   height: 100%;
   width: 100%;
   object-fit: cover;
 }
 
-.info {
+.featured .info {
   position: absolute;
   width: 100%;
 
@@ -22,16 +22,16 @@ img {
   background: linear-gradient(to top, rgba(1, 1, 1, 1), rgba(255, 255, 255, 0));
 }
 
-.info h1{
+.featured .info h1{
   width: 50%;
 }
 
-.metaInfo {
+.featured .metaInfo {
   display: flex;
   align-items: center;
 }
 
-.resolution {
+.featured .resolution {
   border: 1px solid red;
   font-weight: 600;
   color: black;
@@ -39,16 +39,16 @@ img {
   background-color: red;
 }
 
-.rating {
+.featured .rating {
   display: flex;
   align-items: center;
 }
 
-.rating .icon {
+.featured .rating .icon {
   margin-right: 5px;
 }
 
-.info h1 {
+.featured .info h1 {
   margin-bottom: 10px;
 }
 
@@ -56,22 +56,22 @@ img {
   margin: 0px 15px 0px 0px;
 }
 
-.metaInfo .duration {
+.featured .metaInfo .duration {
   margin-right: 30px;
 }
 
-.desc {
+.featured .desc {
   margin-top: 15px;
   width: 50%;
 }
 
-.buttons {
+.featured .buttons {
   margin-top: 50px;
   display: flex;
   align-items: center;
 }
 
-.buttons button {
+.featured .buttons button {
   margin-right: 20px;
   border-radius: 20px;
   padding: 5px 15px;

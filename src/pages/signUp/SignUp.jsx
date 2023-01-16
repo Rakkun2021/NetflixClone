@@ -20,7 +20,8 @@ const SignUp = () => {
     localStorage.setItem("email", emailRef.current.value);
   };
 
-  const handleFinish = () => {
+  const handleFinish = (e) => {
+    e.preventDefault();
     setPassword(passwordRef.current.value);
     localStorage.setItem("password", passwordRef.current.value);
     navigate("/");
@@ -95,7 +96,7 @@ const SignUp = () => {
             <img src="./images/netf.png" alt="" />
           </div>
         </div>
-        <div className="promoLabels-flipped">
+        <div className="promoLabels-flipped-last">
           <div className="right">
             <img src="./images/mobile-0819.jpeg" alt="" />
           </div>

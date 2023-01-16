@@ -11,6 +11,7 @@ import { UserContext } from "./components/userContext/UserContext.jsx";
 
 function App() {
   const { user } = useContext(UserContext);
+  // const user = true;
   return (
     <div className="App">
       <Routes>

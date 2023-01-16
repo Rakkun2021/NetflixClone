@@ -4,7 +4,7 @@
   color: white;
 }
 
-.logo img{
+.signIn .logo img{
   position: absolute;
   top: 30px;
   left: 40px;
@@ -12,14 +12,14 @@
   width: 180px;
 }
 
-.image img {
+.signIn .image img {
   height: 100vh !important;
   width: 100%;
   object-fit: cover;
   filter: brightness(60%);
 }
 
-.signInCard {
+.signIn .signInCard {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -33,11 +33,11 @@
   border-radius: 5px;
 }
 
-.signInCard > * {
+.signIn .signInCard > * {
   margin-bottom: 20px;
 }
 
-.credentials > form > input {
+.signIn .credentials > form > input {
   height: 50px;
   width: 100%;
   border-radius: 5px;
@@ -48,9 +48,11 @@
   color: rgb(55, 55, 55);
   font-weight: 500;
   color: white;
+  font-size: 20px;
+  outline: none;
 }
 
-.credentials input[type="submit"] {
+.signIn .credentials input[type="submit"] {
   height: 50px;
   width: 100%;
   margin-bottom: -10px;
@@ -62,62 +64,62 @@
   cursor: pointer;
 }
 
-input::placeholder {
+.signIn input::placeholder {
   font-size: 15px;
 }
 
-input[type="checkbox"] {
+.signIn input[type="checkbox"] {
   height: 18px;
   width: 18px;
   cursor: pointer;
 }
 
-.credentials {
+.signIn .credentials {
   display: flex;
   flex-direction: column;
 }
 
-.checkbox {
+.signIn .checkbox {
   display: flex;
   align-items: center;
 }
-.checkbox > * {
+.signIn .checkbox > * {
   margin-right: 5px;
 }
 
-.needHelp {
+.signIn .needHelp {
   display: flex;
   align-items: center;
   justify-content: space-between;
   font-size: 15px;
 }
 
-.signUpNow {
+.signIn .signUpNow {
   display: flex;
   align-items: center;
   margin-top: 50px;
 }
 
-.signUpNow > * {
+.signIn .signUpNow > * {
   margin-right: 5px;
 }
 
-.register{
+.signIn .register{
   cursor: pointer;
   color: rgb(25, 124, 244);
 }
 
-.register:hover{
+.signIn .register:hover{
   cursor: pointer;
   transform: scale(1.03);
 }
 
-.captchaNote {
+.signIn .captchaNote {
   font-size: 12px;
   line-height: 1.2;
 }
 
-.footer {
+.signIn .footer {
   height: auto;
   display: flex;
   align-items: center;
@@ -127,7 +129,7 @@ input[type="checkbox"] {
   padding-bottom: 30px;
 }
 
-.left {
+.signIn .left {
   display: flex;
   flex-direction: column;
   width: 50%;
@@ -135,30 +137,30 @@ input[type="checkbox"] {
   line-height: 1.5;
 }
 
-.left img {
+.signIn .left img {
   height: 70px;
   width: 150px;
   margin-left: 0px;
   margin-bottom: 0px;
 }
 
-.connect {
+.signIn .connect {
   display: flex;
   align-items: center;
   cursor: pointer;
 }
 
-.connect .icon {
+.signIn .connect .icon {
   height: 30px;
   width: 30px;
   margin-right: 10px;
 }
 
-.left > :not(.logo) {
+.signIn .left > :not(.logo) {
   margin-bottom: 20px;
 }
 
-.right {
+.signIn .right {
   display: flex;
   align-items: center;
   width: 50%;
@@ -166,17 +168,17 @@ input[type="checkbox"] {
   font-size: 15px;
 }
 
-ul {
+.signIn ul {
   list-style: none;
   margin: 0;
   padding: 50px 50px;
 }
 
-li {
+.signIn li {
   padding: 10px;
   cursor: pointer;
 }
 
-.lists {
+.signIn .lists {
   display: flex;
 }

@@ -1,8 +1,9 @@
 .movies {
+  height: auto;
+  margin-top: 150px;
   display: flex;
   align-items: flex-start;
   flex-direction: column;
-  margin-top: 150px;
   padding: 0px 50px;
   color: white;
 }
@@ -14,17 +15,17 @@
   border-bottom: 1px solid white;
 }
 
-.optionsTab {
+.movies .optionsTab {
   margin: 30px 0px 5px 0px;
   display: flex;
   align-items: center;
 }
 
-.optionsTab > * {
+.movies .optionsTab > * {
   margin-right: 20px;
 }
 
-button {
+.movies button {
   padding: 5px 15px;
   display: flex;
   align-items: center;
@@ -36,16 +37,17 @@ button {
   cursor: pointer;
 }
 
-button > * {
+.movies button > * {
   margin-right: 3px;
 }
 
-button span {
+.movies button span {
   margin-left: 3px;
 }
 
 .pagination {
-  height: auto;
+  height: 100px;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -54,11 +56,19 @@ button span {
 
 .pagination button {
   margin: 10px;
+  padding: 5px 10px;
   cursor: pointer;
   background-color: red;
   color: black;
   font-size: 15px;
   font-weight: 500;
+  border: none;
+  border-radius: 5px;
+}
+
+.pagination button:hover {
+  transform: scale(1.4);
+  transition: 0.2s ease-in;
 }
 
 .pagination .button-active {

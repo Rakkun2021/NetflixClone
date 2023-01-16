@@ -3,8 +3,8 @@ import "./recommend.css";
 import PlayCircleIcon from "@mui/icons-material/PlayCircle";
 import FormatListBulletedIcon from "@mui/icons-material/FormatListBulleted";
 import TrendingUpIcon from "@mui/icons-material/TrendingUp";
-import Poster from "../poster/Poster";
-import Grid from "../grid/Grid";
+// import ArrowCircleRightIcon from "@mui/icons-material/ArrowCircleRight";
+import PosterRecommend from "../posterRecommend/PosterRecommend";
 
 const Recommend = () => {
   return (
@@ -21,8 +21,12 @@ const Recommend = () => {
         <button>
           <TrendingUpIcon className="icon" /> Trending
         </button>
+        {/* <div className="viewAll">
+          <p>View all</p>
+          <ArrowCircleRightIcon className="icon"/>
+        </div> */}
       </div>
-      <Grid numColumns={7} numRows={2} Component={Poster} />
+      <PosterRecommend />
     </div>
   );
 };

@@ -7,23 +7,24 @@
     color: white;
   }
   
-  .titleBar {
+  .television .titleBar {
     font-size: 45px;
     font-weight: 600;
     margin-right: 30px;
+    color: white;
   }
   
-  .optionsTab {
+  .television .optionsTab {
     margin: 30px 0px 5px 0px;
     display: flex;
     align-items: center;
   }
   
-  .optionsTab > * {
+  .television .optionsTab > * {
     margin-right: 20px;
   }
   
-  button {
+  .television button {
     padding: 5px 15px;
     display: flex;
     align-items: center;
@@ -35,15 +36,15 @@
     cursor: pointer;
   }
   
-  button > * {
+  .television button > * {
     margin-right: 3px;
   }
   
-  button span {
+  .television button span {
     margin-left: 3px;
   }
   
-  .pagination {
+  .television .pagination {
     height: auto;
     display: flex;
     align-items: center;
@@ -51,7 +52,7 @@
     margin-top: 60px;
   }
   
-  .pagination button {
+  .television .pagination button {
     margin: 10px;
     cursor: pointer;
     background-color: red;
@@ -60,7 +61,7 @@
     font-weight: 500;
   }
   
-  .pagination .button-active {
+  .television .pagination .button-active {
     margin: 10px;
     cursor: pointer;
     background-color: white;

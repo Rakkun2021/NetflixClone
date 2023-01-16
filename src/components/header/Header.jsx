@@ -8,12 +8,13 @@ import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 
 const Header = () => {
+  const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const [isClicked, setIsClicked] = useState(false);
-  const [isOpen, setIsOpen] = useState(false);
   // eslint-disable-next-line
   const [logout, setLogout] = useState(false);
   const navigate = useNavigate();
+  // const dropdownRef = useRef(null);
 
   useEffect(() => {
     function onScroll() {
@@ -26,12 +27,6 @@ const Header = () => {
     window.addEventListener("scroll", onScroll);
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
-
-  // useEffect(() => {
-  //   if (logout) {
-  //     navigate("/");
-  //   }
-  // }, [logout, navigate]);
 
   const handleClick = () => {
     setIsClicked(!isClicked);

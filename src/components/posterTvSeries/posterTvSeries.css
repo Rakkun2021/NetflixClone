@@ -1,8 +1,8 @@
-.posterTemplate {
+.posterTvSeries {
   width: 100%;
 }
 
-.posterTemplate .posterSlot {
+.posterTvSeries .posterSlot {
   height: fit-content;
   width: 100%;
   display: grid;
@@ -12,7 +12,7 @@
   /* border: 1px solid red; */
 }
 
-.posterTemplate .poster {
+.posterTvSeries .poster {
   height: auto;
   width: fit-content;
   display: flex;
@@ -25,19 +25,19 @@
   margin: 20px auto;
 }
 
-.posterTemplate .poster:hover {
+.posterTvSeries .poster:hover {
   transform: scale(1.1);
   transition: 0.2s ease-in;
 }
 
-.posterTemplate .poster img {
+.posterTvSeries .poster img {
   height: 250px;
   width: 175px;
   object-fit: cover;
   border-radius: 5px;
 }
 
-.posterTemplate .poster p {
+.posterTvSeries .poster p {
   background-color: white;
   color: black;
   width: fit-content;
@@ -49,7 +49,7 @@
   right: 10px;
 }
 
-.posterTemplate .poster .title {
+.posterTvSeries .poster .title {
   margin: 5px 0px;
   width: 100%;
   overflow: hidden;
@@ -61,19 +61,19 @@
   align-self: flex-start;
 }
 
-.posterTemplate .metaData {
+.posterTvSeries .metaData {
   width: 100%;
   display: flex;
   align-items: flex-start;
   justify-content: space-around;
 }
 
-.posterTemplate .metaData .dot {
+.posterTvSeries .metaData .dot {
   font-weight: 900;
   color: white;
 }
 
-.posterTemplate .metaData .type {
+.posterTvSeries .metaData .type {
   border: 1px solid gray;
   padding: 0px 1px;
   font-size: 13px;

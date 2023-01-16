@@ -1,93 +1,74 @@
-.recommend{
-    height: auto;
-    width: 100%;
-    padding: 50px;
-    padding-bottom: 0px;
+.recommend {
+  height: auto;
+  width: auto;
+  margin-top: 30px;
+  padding: 0px 50px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  color: white;
+  
 }
 
-.titleBar{
-    display: flex;
-    align-items: center;
-    color: white;
+.recommend .titleBar {
+  height: auto;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  color: white;
+  justify-content: flex-start;
+  margin: 20px 0px;
 }
 
-.titleBar h1{
-    font-size: 30px;
-    border-bottom: 1px solid white;
+.recommend .titleBar h1 {
+  font-size: 30px;
+  margin-left: 10px;
+  margin-right: 10px;
+  font-weight: 400;
+  border-bottom: 1px solid white;
 }
 
-.titleBar button{
-    margin: 0 20px;
-    display: flex;
-    align-items: center;
-    padding: 3px 8px;
-    border-radius: 5px;
-    outline: none;
-    border: none;
+.recommend .titleBar button {
+  margin: 0 20px;
+  display: flex;
+  align-items: center;
+  padding: 3px 8px;
+  border-radius: 5px;
+  outline: none;
+  border: none;
 }
 
-.icon{
-    margin: 0px 4px 0px 0px;
+.recommend .icon {
+  margin: 0px 4px 0px 0px;
 }
 
-.posterSlot{
-    height: 300px;
-    width: 100%;
-    /* border: 1px solid white; */
-    display: flex;
-    align-items: center;
+.recommend .viewAll {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
 }
 
-.poster{
-    position: relative;
-    height: 300px;
-    width: fit-content;
-    color: rgb(150, 150, 150);
-    margin-top: 50px;
-    margin-right: 20px;
-    cursor: pointer;
+.recommend .viewAll .icon {
+  height: 20px;
+  width: 20px;
 }
 
-.poster img{
-    height: 250px;
-    width: 175px;
-    object-fit: cover;
+.recommend .viewAll p {
+  margin-right: 10px;
+  font-size: 15px;
 }
 
-.poster p{
-    background-color: white;
-    color: black;
-    width: fit-content;
-    padding: 0px 2px;
-    border-radius: 3px;
-    position: absolute;
-    top: 5px;
-    right: 5px;
-    font-weight: 500;
+.recommend .titleBar button {
+  margin: 0 20px;
+  display: flex;
+  align-items: center;
+  padding: 3px 8px;
+  border-radius: 5px;
+  outline: none;
+  border: none;
 }
 
-.poster .title{
-    margin-top: 5px;
-    font-size: 17px;
-    font-weight: 500;
-}
-
-.metaData{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    font-weight: 500;
-    margin: 5px 0px 0px 0px;
-    font-size: 15px;
-}
-
-.metaData .dot{
-    font-weight: 900;
-    font-size: 16px;
-}
-
-.metaData .type{
-    border: 1px solid gray;
-    padding: 0px 1px;
-    font-size: 13px;
+.recommend .icon {
+  margin: 0px 4px 0px 0px;
 }

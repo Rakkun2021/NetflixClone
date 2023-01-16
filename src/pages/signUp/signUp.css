@@ -4,7 +4,7 @@
   position: relative;
 }
 
-.image img {
+.signUp .image img {
   height: 85vh;
   width: 100%;
   object-fit: cover;
@@ -12,7 +12,7 @@
   border-bottom: 7px solid gray;
 }
 
-.logo img{
+.signUp .logo img {
   position: absolute;
   top: 30px;
   left: 40px;
@@ -20,7 +20,7 @@
   width: 180px;
 }
 
-.signUp .signInButton{
+.signUp .signInButton {
   position: absolute;
   top: 30px;
   right: 40px;
@@ -34,7 +34,7 @@
   cursor: pointer;
 }
 
-.signUpCard {
+.signUp .signUpCard {
   position: absolute;
   top: 60%;
   left: 50%;
@@ -44,32 +44,32 @@
   align-items: center;
 }
 
-.signUpCard > * {
+.signUp .signUpCard > * {
   margin-bottom: 25px;
 }
 
-.signUpCard h1 {
+.signUp .signUpCard h1 {
   font-size: 50px;
   text-align: center;
   font-weight: 600;
   line-height: 1;
 }
 
-.signUpCard h3 {
+.signUp .signUpCard h3 {
   font-size: 30px;
   text-align: center;
   font-weight: 500;
   line-height: 1;
 }
 
-.signUpCard p {
+.signUp .signUpCard p {
   margin-bottom: 15px;
   margin-top: 10px;
   font-size: 19px;
   font-weight: 500;
 }
 
-.inputLabel {
+.signUp .inputLabel {
   width: 1000px;
   display: flex;
   align-items: center;
@@ -81,19 +81,19 @@
   width: 500px;
 }
 
-input[type="email"] {
+.signUp input[type="email"] {
   padding-left: 10px;
   font-size: 18px;
   outline: none;
 }
 
-input[type="password"] {
+.signUp input[type="password"] {
   padding-left: 10px;
   font-size: 18px;
   outline: none;
 }
 
-input[type="submit"] {
+.signUp input[type="submit"] {
   height: 60px;
   width: 200px;
   background-color: red;
@@ -101,9 +101,10 @@ input[type="submit"] {
   font-size: 25px;
   color: white;
   font-weight: 500;
+  cursor: pointer;
 }
 
-.promoLabels {
+.signUp .promoLabels {
   display: flex;
   align-items: center;
   padding: 30px 120px;
@@ -111,23 +112,32 @@ input[type="submit"] {
   border-bottom: 7px solid gray;
 }
 
-.left h1 {
+.signUp .left h1 {
   font-size: 50px;
   margin-bottom: 20px;
 }
-.left h2 {
+
+.signUp .left h2 {
   font-size: 25px;
   font-weight: 500;
 }
 
-.right img {
+.signUp .right img {
   height: 375px;
 }
 
-.promoLabels-flipped {
+.signUp .promoLabels-flipped {
   display: flex;
   align-items: center;
   padding: 30px 120px;
   justify-content: space-between;
   border-bottom: 7px solid gray;
+}
+
+.signUp .promoLabels-flipped-last {
+  display: flex;
+  align-items: center;
+  padding: 30px 120px;
+  justify-content: space-between;
+  /* border-bottom: 7px solid gray; */
 }

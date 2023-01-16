@@ -7,7 +7,7 @@
   justify-content: center;
 }
 
-.back {
+.watch .back {
   display: flex;
   align-items: center;
   position: absolute;
@@ -18,11 +18,11 @@
   z-index: 999;
 }
 
-.back > * {
+.watch .back > * {
   margin-right: 10px;
 }
 
-.video {
+.watch .video {
   width: 100%;
   height: 100%;
   object-fit: cover;

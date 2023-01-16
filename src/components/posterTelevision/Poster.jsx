@@ -14,10 +14,17 @@ const Poster = ({ movies }) => {
     setVideoKey(key);
     window.open("https://www.youtube.com/watch?v=" + key);
   };
+
+  // console.log(videoKey);
+
+  const preferredTvShows = movies.filter(
+    (tvShow) => tvShow.original_language === "en"
+  );
+
   return (
     <div className="posterTemplate">
       <div className="posterSlot">
-        {movies.map((movie) => (
+        {preferredTvShows.map((movie) => (
           <div
             key={movie.id}
             className="poster"
@@ -30,7 +37,7 @@ const Poster = ({ movies }) => {
             />
             <div className="title">{movie.name}</div>
             <div className="metaData">
-              <div className="year">{movie.release_date.slice(0, 4)}</div>
+              <div className="year">{movie.first_air_date.slice(0, 4)}</div>
               <div className="dot">.</div>
               <div className="duration">190 min</div>
               <div className="type">Movie</div>

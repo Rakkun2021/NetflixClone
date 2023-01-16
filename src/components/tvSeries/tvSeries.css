@@ -1,24 +1,60 @@
 .tvSeries {
-  margin: 75px 50px 0px 50px;
+  height: auto;
+  width: auto;
+  padding: 0px 50px;
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center !important;
+  color: white;
 }
 
 .tvSeries .titleBar {
+  height: auto;
+  width: 100%;
   display: flex;
   align-items: center;
+  color: white;
   justify-content: space-between;
+  margin: 20px 0px;
 }
 
-.viewAll {
+.tvSeries .titleBar h1 {
+  font-size: 30px;
+  margin-left: 10px;
+  margin-right: 10px;
+  font-weight: 400;
+  border-bottom: 1px solid white;
+}
+
+.tvSeries .titleBar button {
+  margin: 0 20px;
+  display: flex;
+  align-items: center;
+  padding: 3px 8px;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+}
+
+.tvSeries .icon {
+  margin: 0px 4px 0px 0px;
+}
+
+.tvSeries .viewAll {
   display: flex;
   align-items: center;
   cursor: pointer;
 }
 
-.viewAll .icon {
+.tvSeries .viewAll .icon {
   height: 20px;
   width: 20px;
 }
-.viewAll p {
+
+.tvSeries .viewAll p {
   margin-right: 10px;
   font-size: 15px;
 }
