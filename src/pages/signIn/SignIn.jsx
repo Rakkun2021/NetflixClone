@@ -3,15 +3,15 @@ import "./signIn.css";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { useContext } from 'react';
-import { UserContext } from '../../components/userContext/UserContext.jsx'
-
-
+import { useContext } from "react";
+import { UserContext } from "../../components/userContext/UserContext.jsx";
+import useKeyboardJs from 'react-use/lib/useKeyboardJs';
 
 const SignIn = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const {setUser} = useContext(UserContext)
+  const [isEnterPressed] = useKeyboardJs("enter");
+  const { setUser } = useContext(UserContext);
   const navigate = useNavigate();
 
   const handleSubmit = (e) => {
@@ -51,7 +51,12 @@ const SignIn = () => {
                 placeholder="Password"
                 onChange={(e) => setPassword(e.target.value)}
               />
-              <input type="submit" value="Sign In" onClick={handleSubmit} />
+              <input
+                type="submit"
+                value="Sign In"
+                onClick={handleSubmit}
+                onKeyPress={isEnterPressed ? handleSubmit : null}
+              />
             </form>
           </div>
           <div className="needHelp">

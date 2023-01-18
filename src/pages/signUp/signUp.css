@@ -5,10 +5,10 @@
 }
 
 .signUp .image img {
-  height: 85vh;
+  height: 100vh;
   width: 100%;
   object-fit: cover;
-  filter: brightness(60%);
+  filter: brightness(40%);
   border-bottom: 7px solid gray;
 }
 
@@ -16,8 +16,8 @@
   position: absolute;
   top: 30px;
   left: 40px;
-  height: 50px !important;
-  width: 180px;
+  height: 70px !important;
+  width: 160px;
 }
 
 .signUp .signInButton {
@@ -28,7 +28,7 @@
   background-color: red;
   border: none;
   color: white;
-  border-radius: 2px;
+  border-radius: 5px;
   font-weight: 500;
   font-size: 18px;
   cursor: pointer;

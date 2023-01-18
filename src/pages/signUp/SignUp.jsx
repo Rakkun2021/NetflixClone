@@ -1,19 +1,31 @@
 import React from "react";
 import "./signUp.css";
 import Footer from "../../components/footer/Footer.jsx";
-import { useState, useRef } from "react";
+import { useState, useRef, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
+import { useContext } from "react";
+import { UserContext } from "../../components/userContext/UserContext.jsx";
+import useKeyboardJs from "react-use/lib/useKeyboardJs";
 
 const SignUp = () => {
+  const navigate = useNavigate();
   const [email, setEmail] = useState("");
+  const [isEnterPressed] = useKeyboardJs("enter");
+  const { setUser } = useContext(UserContext);
   // eslint-disable-next-line
   const [password, setPassword] = useState("");
   // eslint-disable-next-line
-  const [user, setUser] = useState("false");
+  // const [user, setUser] = useState("false");
   const emailRef = useRef();
   const passwordRef = useRef();
 
-  const navigate = useNavigate();
+  useEffect(() => {
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "Enter" && emailRef.current === document.activeElement) {
+        handleStart();
+      }
+    });
+  }, []);
 
   const handleStart = () => {
     setEmail(emailRef.current.value);
@@ -25,6 +37,7 @@ const SignUp = () => {
     setPassword(passwordRef.current.value);
     localStorage.setItem("password", passwordRef.current.value);
     navigate("/");
+    setUser(true);
   };
 
   return (
@@ -51,12 +64,17 @@ const SignUp = () => {
           {!email ? (
             <div className="inputLabel">
               <input type="email" ref={emailRef} placeholder="Email Address" />
-              <input type="submit" value="Get Started" onClick={handleStart} />
+              <input type="submit" value="Get Started" onClick={(e) => handleStart(e)} />
             </div>
           ) : (
             <form className="inputLabel">
               <input type="password" ref={passwordRef} placeholder="Password" />
-              <input type="submit" value="Start" onClick={handleFinish} />
+              <input
+                type="submit"
+                value="Start"
+                onClick={handleFinish}
+                onKeyDown={isEnterPressed ? handleFinish : null}
+              />
             </form>
           )}
         </div>

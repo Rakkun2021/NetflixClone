@@ -15,7 +15,7 @@ function App() {
   return (
     <div className="App">
       <Routes>
-        <Route exact path="/" element={user ? <Home /> : <SignUp />} />
+        <Route path="/" element={user ? <Home /> : <SignUp />} />
         <Route path="/movies" element={user ? <Movies /> : <SignIn />} />
         <Route path="/tv" element={user ? <Television /> : <SignIn />} />
         <Route path="/watch" element={user ? <Watch /> : <SignIn />} />

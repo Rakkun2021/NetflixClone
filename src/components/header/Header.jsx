@@ -3,18 +3,22 @@ import "./header.css";
 import Search from "@mui/icons-material/Search";
 import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
 import NotificationsActiveIcon from "@mui/icons-material/NotificationsActive";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
+// import OutsideClickHandler from "react-outside-click-handler";
+// import Logout from "../../components/logout/Logout.jsx";
+// import { useClickOutside } from "react-use";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const [isClicked, setIsClicked] = useState(false);
+  const dropdownRef = useRef(null);
   // eslint-disable-next-line
   const [logout, setLogout] = useState(false);
   const navigate = useNavigate();
-  // const dropdownRef = useRef(null);
+  // const [dropdownRef, setOpen] = useClickOutside(() => setOpen(false));
 
   useEffect(() => {
     function onScroll() {
@@ -27,6 +31,18 @@ const Header = () => {
     window.addEventListener("scroll", onScroll);
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
+
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+        setIsOpen(false);
+      }
+    };
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [dropdownRef]);
 
   const handleClick = () => {
     setIsClicked(!isClicked);
@@ -68,13 +84,15 @@ const Header = () => {
             src="./images/instyle-july-mos-jon-hamm-3-2000-8fcab15780f641c6b4aae6d27ede694f.jpeg"
             alt=""
           />
-          <ArrowDropDownIcon className="icon" onClick={handleClick} />
-          {isOpen && (
-            <div className="options">
-              <span>Settings</span>
-              <span onClick={handleLogout}>Logout</span>
-            </div>
-          )}
+          <div ref={dropdownRef}>
+            <ArrowDropDownIcon className="icon" onClick={handleClick} />
+            {isOpen && (
+              <div className="options">
+                <span>Settings</span>
+                <span onClick={handleLogout}>Logout</span>
+              </div>
+            )}
+          </div>
         </div>
       </div>
     </div>
